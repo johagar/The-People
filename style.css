@@ -1,0 +1,40 @@
+.title{
+  text-align:center;
+  font-family:poppins;
+  background-color:#A10505FF;
+  width:400px;
+  margin:auto;
+  border-radius:20px;
+  padding:5px;
+  margin-top:20px;
+  color:white;
+}
+.imgs {
+  text-align: center;
+}
+
+.imgs figure {
+  display: inline-block;
+  margin: 20px;
+}
+
+.imgs img {
+  width: 200px;      /* all images get the same width */
+  height: auto;      /* height adjusts automatically to keep aspect ratio */
+  border: 2px solid black;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+}
+
+.imgs figcaption {
+  text-align: center;
+  margin-top: 5px;
+  font-family: poppins;
+  font-size: 14px;
+}
+
+.img1:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); 
+}
