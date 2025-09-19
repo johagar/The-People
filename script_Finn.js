@@ -1,4 +1,5 @@
 // ===== Get elements safely =====
+import { doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-firestore.js";
 const pass = document.getElementById("password");
 const save = document.getElementById("save");
 const enter = document.getElementById("enter");
