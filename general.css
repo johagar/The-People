@@ -1,0 +1,76 @@
+.title{
+  text-align:center;
+  font-family:poppins;
+  background-color:#A10505FF;
+  width:400px;
+  margin:auto;
+  border-radius:20px;
+  padding:5px;
+  margin-top:20px;
+  color:white;
+}
+
+.title:hover{
+  border:2px solid black;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.img {
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.descrip:hover{
+  background-color:yellow;
+  cursor:pointer;
+}
+
+.info > h3 {
+  font-family: Lato, sans-serif;
+  text-align: center;
+  max-width: 500px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #333;
+}
+
+.login{
+  margin:auto;
+  text-align:center;
+}
+
+.password{
+  border-radius:5px;
+  border: 2px dotted black;
+  margin:auto;
+ 
+  
+}
+
+#save{
+ margin:10px auto; 
+  font-family:poppins;
+ background-color:green;
+  color:white;
+  border:none;
+ border-radius:5px;
+}
+
+#enter{
+  margin:10px auto; 
+  font-family:poppins;
+ background-color:green;
+  color:white;
+  border:none;
+ border-radius:5px;
+ cursor:pointer;
+}
