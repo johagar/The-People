@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>page_Creator</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The People</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="general.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Firebase snippet -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-analytics.js";
+    import { getFirestore } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBIwjTjqf56ord-11IqFc4jxGg7o-yNXDs",
+      authDomain: "the-people-project-b80ff.firebaseapp.com",
+      projectId: "the-people-project-b80ff",
+      storageBucket: "the-people-project-b80ff.firebasestorage.app",
+      messagingSenderId: "804463901240",
+      appId: "1:804463901240:web:d85bddbb5c99c7c3b044cd",
+      measurementId: "G-2RM0HEX746"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    getAnalytics(app);
+    const db = getFirestore(app);
+    window.db = db;
+  </script>
+</head>
+<body data-profile="creator">
+
+  <div class="title">
+    <h1 id="profileName">Joha Garrard</h1>
+    <h3 id="profileNick">The Creator</h3>
+  </div>
+
+  <div class="info">
+    <img id="profileImg" src="https://i.etsystatic.com/46043046/r/il/bfc9da/6977816305/il_570xN.6977816305_l2ov.jpg" class="img">
+    <input type="file" id="imgInput" accept="image/*">
+    <h3 id="descrip" class="descrip">
+      Joha is the mastermind behind it all, the visionary who brings ideas to life with energy and creativity. Sharp-minded and charismatic, The Creator inspires everyone around him with humor, determination, and a love for storytelling.
+    </h3>
+  </div>
+
+  <div class="login">
+    <input class="password" id="password" placeholder="Please enter password"/>
+    <button id="enter">Enter</button>
+    <button id="save">Save</button>
+  </div>
+
+  <script type="module" src="./script_Creator.js"></script>
+
+  <footer style="text-align:center; margin-top:2rem; font-size:0.9em; color:gray;">
+    © 2025 Joha Garrard — Powered by Firebase 🔥
+  </footer>
+</body>
+</html>
+<!-- partial -->
+  <script type="module" src="./script.js"></script>
+
+</body>
+</html>
