@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>page_Porridge</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The People</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="general.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@300;400;500;700;900&family=Raleway:wght@300;400;600;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Firebase snippet -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-analytics.js";
+    import { getFirestore } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBIwjTjqf56ord-11IqFc4jxGg7o-yNXDs",
+      authDomain: "the-people-project-b80ff.firebaseapp.com",
+      projectId: "the-people-project-b80ff",
+      storageBucket: "the-people-project-b80ff.firebasestorage.app",
+      messagingSenderId: "804463901240",
+      appId: "1:804463901240:web:d85bddbb5c99c7c3b044cd",
+      measurementId: "G-2RM0HEX746"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    window.db = getFirestore(app);
+  </script>
+</head>
+<body data-profile="william">
+
+  <div class="title">
+    <h1 id="profileName">William Partride</h1>
+    <h3 id="profileNick">Porridge</h3>
+  </div>
+
+  <div class="info">
+    <img id="profileImg" src="https://i.postimg.cc/xdHmzfGb/Snapchat-46217979.jpg" class="img">
+    <input type="file" id="imgInput" accept="image/*">
+    <h3 id="descrip" class="descrip">
+      William Partridge is a weird fella. He's a good guy, you know. He's quite committed to everything and he doesn't take no for an answer. We all love him though. He can have a bit of an ego at times, but he's just a great guy.
+    </h3>
+  </div>
+
+  <div class="login">
+    <input class="password" id="password" placeholder="Please enter password"/>
+    <button id="enter">Enter</button>
+    <button id="save">Save</button>
+  </div>
+
+  <script type="module" src="./script_William.js"></script>
+
+  <footer style="text-align:center; margin-top:2rem; font-size:0.9em; color:gray;">
+    © 2025 Joha Garrard — Powered by Firebase 🔥
+  </footer>
+</body>
+</html>
+<!-- partial -->
+  <script type="module" src="./script.js"></script>
+
+</body>
+</html>
